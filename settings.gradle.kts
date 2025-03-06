@@ -1,3 +1,6 @@
+rootProject.name = "happn-test"
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+
 pluginManagement {
     repositories {
         google {
@@ -18,7 +21,6 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-
-rootProject.name = "happn-test"
+includeBuild("build-logic")
 include(":app")
  
