@@ -34,3 +34,9 @@ include(
     ":core:db:gateway",
     ":core:db:implementation",
 )
+include(
+    ":feature:artlist:data",
+    ":feature:artlist:domain",
+    ":feature:artlist:ui",
+    ":feature:artlist:lib",
+)

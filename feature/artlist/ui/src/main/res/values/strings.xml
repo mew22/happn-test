@@ -1,0 +1,4 @@
+<resources>
+    <string name="art_list_title">Art List</string>
+    <string name="offline_message">No internet connection</string>
+</resources>
