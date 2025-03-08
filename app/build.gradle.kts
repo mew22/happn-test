@@ -18,6 +18,9 @@ dependencies {
     implementation(projects.feature.artlist.lib)
     implementation(projects.feature.artlist.data)
 
+    implementation(projects.feature.artdetail.lib)
+    implementation(projects.feature.artdetail.data)
+
     implementation(libs.room.runtime)
     ksp(libs.room.compiler)
 }

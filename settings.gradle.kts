@@ -40,3 +40,9 @@ include(
     ":feature:artlist:ui",
     ":feature:artlist:lib",
 )
+include(
+    ":feature:artdetail:data",
+    ":feature:artdetail:domain",
+    ":feature:artdetail:ui",
+    ":feature:artdetail:lib",
+)

@@ -6,6 +6,8 @@ import io.github.mew22.happntest.core.db.dbModule
 import io.github.mew22.happntest.core.environment.envModule
 import io.github.mew22.happntest.core.monitoring.monitoringModule
 import io.github.mew22.happntest.core.network.networkModule
+import io.github.mew22.happntest.feature.artdetail.ArtDetailDatabase
+import io.github.mew22.happntest.feature.artdetail.artDetailModule
 import io.github.mew22.happntest.feature.artlist.ArtListDatabase
 import io.github.mew22.happntest.feature.artlist.artListModule
 import org.koin.core.KoinApplication
@@ -23,6 +25,7 @@ val koinConfig: KoinApplication.() -> Unit = {
     modules(
         databaseModule,
         artListModule,
+        artDetailModule
     )
 }
 
@@ -32,5 +35,5 @@ val databaseModule = module {
             Database::class.java,
             "database.db"
         )
-    }.binds(arrayOf(ArtListDatabase::class))
+    }.binds(arrayOf(ArtListDatabase::class, ArtDetailDatabase::class))
 }
