@@ -26,6 +26,7 @@ include(":app")
 include(
     ":core:common",
     ":core:network",
+    ":core:ui",
     ":core:env:gateway",
     ":core:env:implementation",
     ":core:monitoring:gateway",

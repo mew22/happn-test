@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_navigate_up">Navigate up</string>
+    <string name="common_error_title">Oops! Something went wrong!</string>
+    <string name="common_error_message">There was a network error while processing your request. Please, try again.</string>
+    <string name="common_back_home">Back home</string>
+    <string name="common_back">Back</string>
+    <string name="common_try_again">Try again</string>
+</resources>
