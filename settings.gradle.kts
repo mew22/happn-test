@@ -30,4 +30,6 @@ include(
     ":core:env:implementation",
     ":core:monitoring:gateway",
     ":core:monitoring:implementation",
+    ":core:db:gateway",
+    ":core:db:implementation",
 )
