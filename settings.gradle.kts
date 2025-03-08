@@ -25,6 +25,7 @@ includeBuild("build-logic")
 include(":app")
 include(
     ":core:common",
+    ":core:network",
     ":core:env:gateway",
     ":core:env:implementation",
 )
