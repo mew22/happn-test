@@ -28,4 +28,6 @@ include(
     ":core:network",
     ":core:env:gateway",
     ":core:env:implementation",
+    ":core:monitoring:gateway",
+    ":core:monitoring:implementation",
 )
