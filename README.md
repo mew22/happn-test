@@ -215,22 +215,26 @@ There are some improvements that I would like to add later:
     - /network
 # Features
 - /feature
-    # Feature package corresponding to Art List feature (display list of art object)
+    # Feature module corresponding to Art List feature (display list of art object)
     - /artlist
-        # Directory responsible for containing everything related to external services like databases, remote services, device apis, data providers
+        # Plain Kotlin module responsible for containing everything related to external services like databases, remote services, device apis, data providers
         - /data
-        # The enterprise business rules that contains entities, failures, value objects and repositories abstractions
+        # Plain Kotlin module that hold business rules, entities, failures, value objects and repositories abstractions
         - /domain
-        # Directory responsible for containing compose views, fragments, views, viewModels
+        # Android module that hold compose views, fragments, views, viewModels
         - /ui
-    # Feature package corresponding to Art Detail feature (display detail of an art object)
+        # Android module that act as an umbrella module for all data, domain and ui of the feature. Hold dependency injection and routes.
+        - /lib
+    # Feature module corresponding to Art Detail feature (display detail of an art object)
     - /artdetail
-        # Directory responsible for containing everything related to external services like databases, remote services, device apis, data providers
+        # Plain Kotlin module responsible for containing everything related to external services like databases, remote services, device apis, data providers
         - /data
-        # The enterprise business rules that contains entities, failures, value objects and repositories abstractions
+        # Plain Kotlin module that hold business rules, entities, failures, value objects and repositories abstractions
         - /domain
-        # Directory responsible for containing activities, fragments, views, viewModels
+        # Android module that hold compose views, fragments, views, viewModels
         - /ui
+        # Android module that act as an umbrella module for all data, domain and ui of the feature. Hold dependency injection and routes.
+        - /lib
 ```
 
 ### Screenshots ###
